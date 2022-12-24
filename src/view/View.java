@@ -1,13 +1,13 @@
 package view;
 import javax.swing.*;
 import java.awt.*;
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 
 import Template.FOperationHandler;
 import Template.InvoiceTableHandler;
 import Template.ApplicationHeader;
-import Template.ItemClass;
+
 
 import javax.swing.JTable;
 public class View extends JFrame
@@ -289,11 +289,11 @@ public class View extends JFrame
     private ControllerInv ctrl = new ControllerInv( this);
     private Events ActionTab = new Events(this);
 
-    public SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
+
 
     private ArrayList<ApplicationHeader> invos;
 
-    private ArrayList<ItemClass> lines;
+
 
 
 
@@ -320,15 +320,6 @@ public class View extends JFrame
         return IabelInvNumber;
     }
 
-    public void setIabelInvNumber(JLabel iabelInvNumber)
-    {
-        this.IabelInvNumber = iabelInvNumber;
-    }
-
-    public void setLines(ArrayList<ItemClass> lines)
-    {
-        this.lines = lines;
-    }
     private InvoiceTableHandler headerTable;
 
     public InvoiceTableHandler getHeaderTab()
@@ -353,26 +344,6 @@ public class View extends JFrame
         this.invos = invos;
     }
 
-    public JLabel getCusName()
-    {
-        return CusName;
-    }
-
-    public JLabel getDateInv()
-    {
-        return DateInv;
-    }
-
-    public JLabel getNumberInv()
-    {
-        return NumberInv;
-    }
-
-    public JLabel getTotalCostInv()
-    {
-        return TotalCostInv;
-    }
-
     public JLabel getIabelCName()
     {
         return IabelCName;
@@ -393,20 +364,7 @@ public class View extends JFrame
         return InvLineTab;
     }
 
-    public ControllerInv getListener()
-    {
-        return ctrl;
-    }
-    public void setCusLabel(String name)
-    {
-        IabelCName.setText(name);
-    }
 
-
-    public void setCusName(String name){
-        InvHeaderTab.setName(name);
-
-    }
     public int getTotalInvNo(){
 
         int No=0;

@@ -37,30 +37,21 @@ public class ApplicationHeader {
         return Hnumber;
     }
 
-    public void setHnumber(int hnumber)
-    {
-        this.Hnumber = hnumber;
-    }
+
 
     public String getHname()
     {
         return Hname;
     }
 
-    public void setHname(String hname)
-    {
-        this.Hname = hname;
-    }
+
 
     public String getHdate()
     {
         return Hdate;
     }
 
-    public void setHdate(String hdate)
-    {
-        this.Hdate = hdate;
-    }
+
 
     public ArrayList<ItemClass> getClasItems()
     {

@@ -20,13 +20,11 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 public class ControllerInv implements ActionListener , ListSelectionListener
 {
-    private ItemClass itemClass;
 
-    private ApplicationHeader applicationHeader;
 
     final private View FrmApplication;
 
-    private String name ;
+
 
     private addInvoDialoge DialogeInvo;
 
@@ -153,22 +151,16 @@ public class ControllerInv implements ActionListener , ListSelectionListener
 
     }
 
-    public ApplicationHeader getInvByNo(int No){
-
-        for(ApplicationHeader invNo: FrmApplication.getInvo()){
-
-            if(No==invNo.getHnumber()){
-                return invNo;
-            }
-        }
-        return null;
-    }
 
     private void InvoCancel() {
 
         DialogeInvo.setVisible(false);
+
         DialogeInvo.dispose();
+
         DialogeInvo =null;
+
+
     }
 
     @Override
@@ -180,9 +172,10 @@ public class ControllerInv implements ActionListener , ListSelectionListener
     private void LineRemove() {
 
         DialogeItem.setVisible(false);
+
         DialogeItem.dispose();
 
-        DialogeItem =null;
+        DialogeItem = null;
 
     }
     private void LineAdding() {

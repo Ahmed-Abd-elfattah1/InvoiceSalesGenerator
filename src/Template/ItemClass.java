@@ -60,9 +60,6 @@ public class ItemClass {
         return PricePerUnit;
     }
 
-    public void setPricePerUnit(double pricePerUnit) {
-        this.PricePerUnit = pricePerUnit;
-    }
 
     @Override
     public String toString() {
